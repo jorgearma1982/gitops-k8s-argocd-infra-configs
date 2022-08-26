@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       run: whoami
-  replicas: 3
+  replicas: 5
   template:
     metadata:
       labels:
