@@ -8,10 +8,11 @@ metadata:
 spec:
   ingressClassName: "kong"
   rules:
-    - http:
+    - host: localhost
+      http:
         paths:
-          - pathType: Prefix
-            path: /whoami
+          - path: /whoami
+            pathType: Prefix
             backend:
               service:
                 name: whoami
